@@ -1,9 +1,9 @@
 package com.example.poster.mvpdemoproject;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.poster.mvpdemoproject.presenter.Presenter;
@@ -12,7 +12,6 @@ import com.example.poster.mvpdemoproject.view.MainView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements MainView{
     @BindView(R.id.textResult) TextView textResult;
@@ -38,6 +37,12 @@ public class MainActivity extends AppCompatActivity implements MainView{
         textResult.setText(text);
     }
 
+    @Override
+    public void showAlertDialog() {
+        //?
+    }
+
+    //ссилка на презентер
     public Presenter getPresenter(){
         return presenter;
     }

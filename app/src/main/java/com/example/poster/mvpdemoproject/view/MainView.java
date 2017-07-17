@@ -6,5 +6,5 @@ package com.example.poster.mvpdemoproject.view;
 
 public interface MainView {
     void showResult(String result);
+    void showAlertDialog();
 }
-

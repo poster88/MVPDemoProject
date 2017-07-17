@@ -25,8 +25,6 @@ public class ListAdapter extends BaseAdapter {
         }
     }
 
-
-
     @Override
     public int getCount() {
         return list.size();
@@ -52,7 +50,8 @@ public class ListAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 if (context instanceof MainActivity){
-                    ((MainActivity)context).getPresenter().buttonPress(list.get(position));
+                    //((MainActivity)context).getPresenter().buttonPress(list.get(position));
+                    ((MainActivity)context).getPresenter().shutLoadTextInView(list.get(position), context);
                 }
             }
         });

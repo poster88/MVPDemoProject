@@ -6,6 +6,7 @@ package com.example.poster.mvpdemoproject;
 
 public class MainModel {
     private String item = "";
+    private String title = "";
 
     public void setItem(String string){
         item = "Selected : " + string;
@@ -13,5 +14,13 @@ public class MainModel {
 
     public String getItem() {
         return item;
+    }
+
+    public void setTitleToAlertDialog(String message){
+        title = "Set title for item " + message + "?";
+    }
+
+    public String getTitleAlertDialog(){
+        return title;
     }
 }
